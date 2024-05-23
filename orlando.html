@@ -7,12 +7,14 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
+    <title>Orlando | Florida</title>
+    <meta
+      name="description"
+      content="This website is stricktly for demonstration purposes used for WGU's D277 - Front End Development course."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./styles/orlando.css" />
     <link rel="stylesheet" href="./styles/global.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,14 +22,173 @@
       rel="stylesheet"
     />
   </head>
+  <header>
+    <div class="leftHeader">
+      <h1 class="h1">Florida</h1>
+      <p class="subtext">The Sunshine State</p>
+    </div>
+    <div class="search">
+      <form><input class="input" placeholder="Search" /></form>
+      <button class="button">Go</button>
+    </div>
+  </header>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a class="link" href="./index.html" target="_self">Home</a>
+      </li>
+      <li class="li">
+        <a class="link" href="./orlando.html" target="_self">Orlando</a>
+      </li>
+      <li class="li">
+        <a class="link" href="./tampa.html" target="_self">Tampa</a>
+      </li>
+      <li class="li">
+        <a class="link" href="./tallahassee.html" target="_self">Tallahassee</a>
+      </li>
+    </ul>
+  </nav>
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
+    <section class="hero">
+      <div class="leftFlex">
+        <h2 class="h2">Orlando</h2>
+        <h3 class="h3">Orlando has a 63.6% employment rate</h3>
+        <p>
+          Fort Gatlin was built south of the present Orlando City limits in 1838
+          to protect settlers.
+        </p>
+      </div>
+    </section>
+    <div id="divider"></div>
 
+    <!-- data table starts here -->
+    <section class="tableContainer">
+      <table id="table">
+        <tr class="tr">
+          <th><h3>City</h3></th>
+          <th><h3>Year Incorporated</h3></th>
+          <th><h3>Region</h3></th>
+          <th><h3>City Population</h3></th>
+          <th><h3>Average Income</h3></th>
+          <th><h3>City Classification</h3></th>
+        </tr>
+        <tr class="tr">
+          <td>Orlando</td>
+          <td>1875</td>
+          <td>Central Florida</td>
+          <td>307,573</td>
+          <td>$65,354</td>
+          <td>Urban</td>
+        </tr>
+        <tr class="tr">
+          <td>Tampa</td>
+          <td>1849</td>
+          <td>Central Florida</td>
+          <td>384,959</td>
+          <td>$71,089</td>
+          <td>Urban</td>
+        </tr>
+        <tr class="tr">
+          <td>Tallahassee</td>
+          <td>1825</td>
+          <td>Northern Panhandle Region</td>
+          <td>196,169</td>
+          <td>$53,867</td>
+          <td>Urban</td>
+        </tr>
+      </table>
+    </section>
+    <!-- row two begins here -->
+    <section id="about" class="rowTwo">
+      <div class="imgContainer">
+        <img
+          src="./public/orlando.jpg"
+          alt="Orlando, Florida skyline"
+          class="img"
+        />
+        <p class="subtext">
+          image source: Haupt, M. (December 28, 2020). Unsplash.
+          <a
+            href="https://unsplash.com/photos/city-skyline-across-body-of-water-during-daytime-Tyn3-Cljx-A"
+            target="_blank"
+            >LINK</a
+          >
+        </p>
+      </div>
+      <aside class="aside">
+        <h4 class="h4">Sources</h4>
+        <ol class="ol">
+          <li>
+            Talia (May 29, 2020). Unsplash
+            <a
+              class="link"
+              href="https://unsplash.com/photos/cars-parked-on-parking-lot-near-high-rise-buildings-during-daytime-3SUZEca_P7Q"
+              target="_blank"
+              >https://unsplash.com/photos/cars-parked-on-parking-lot-near-high-rise-buildings-during-daytime-3SUZEca_P7Q</a
+            >
+          </li>
+          <li>
+            Vogenau, K. (November 12, 2019). Unsplash.
+            <a
+              class="link"
+              href="https://unsplash.com/photos/city-skyline-across-body-of-water-during-daytime-Tyn3-Cljx-A"
+              target="_blank"
+              >https://unsplash.com/photos/city-skyline-across-body-of-water-during-daytime-Tyn3-Cljx-A</a
+            >
+          </li>
+          <li>
+            United States Census Bureau (n.d.). Orlando city, Florida.
+            <a
+              class="link"
+              href="https://data.census.gov/profile/Orlando_city,_Florida?g=160XX00US1253000"
+              target="_blank"
+              >https://data.census.gov/profile/Orlando_city,_Florida?g=160XX00US1253000</a
+            >
+          </li>
+        </ol>
+      </aside>
+    </section>
+    <div class="clear"></div>
+    <section class="rowThree">
+      <p>
+        Orlando with $13.4 billion technology industry is a major industrial and
+        hi-tech center employing 53,000 people.
+      </p>
+      <aside class="aside2">
+        <h2>
+          "Orlando has the 7th-largest research park in thek country, Central
+          Florida Research Park, with over 1,025 acres."
+        </h2>
+        <p class="srcCaption">
+          -Wikipedia (n.d.). Orlando, Florida.
+          <a
+            href="https://en.wikipedia.org/wiki/Orlando,_Florida"
+            target="_blank"
+            >LINK</a
+          >
+        </p>
+      </aside>
+    </section>
+    <div class="clear"></div>
+
+    <footer class="footer">
+      <ul class="ul">
+        <li class="li">
+          <a class="link" href="./index.html" target="_self">Home</a>
+        </li>
+        <li class="li">
+          <a class="link" href="./orlando.html" target="_self">Orlando</a>
+        </li>
+        <li class="li">
+          <a class="link" href="./tampa.html" target="_self">Tampa</a>
+        </li>
+        <li class="li">
+          <a class="link" href="./tallahassee.html" target="_self"
+            >Tallahassee</a
+          >
+        </li>
+      </ul>
+    </footer>
     <script src="" async defer></script>
   </body>
 </html>

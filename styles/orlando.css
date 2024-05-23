@@ -1,0 +1,96 @@
+body {
+  position: relative;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../public/downtownOrlando.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.33;
+  z-index: -1;
+}
+.hero {
+  padding: 10% 5% 10% 10% !important;
+}
+.leftFlex {
+  text-align: left !important;
+}
+.rowTwo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-right: solid 1px #b3b3b3;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.row2Text {
+  text-align: center;
+  min-height: 400px;
+  width: 75%;
+}
+.aside {
+  float: right;
+  width: 25%;
+  background-color: #a80533;
+  color: #ffffff;
+  margin-right: 10%;
+  border: solid 1px #000000;
+  border-radius: 12px;
+  padding: 3%;
+  height: fit-content;
+}
+
+.h4 {
+  padding-bottom: 3%;
+  text-decoration: underline;
+}
+.ol {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  padding: 3%;
+}
+
+.ol > .ul {
+  display: flex;
+  flex-direction: column;
+  list-style: circle;
+}
+.imgContainer {
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  padding: 3% 3% 3% 10%;
+}
+.img {
+  width: 100%;
+}
+.clear {
+  clear: both;
+}
+.link {
+  color: #ffffff;
+}
+.rowThree > p {
+  padding: 3% 10%;
+}
+.aside2 {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 3% 10%;
+  float: inline-start;
+}
+.aside2 > h2 {
+  padding-right: 10%;
+}
+.rowThree > p {
+  font-size: 2rem;
+  font-weight: 400;
+}
