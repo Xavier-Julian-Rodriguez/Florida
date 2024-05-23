@@ -3,11 +3,18 @@
 }
 .imgContainer {
   width: 50%;
+  position: relative;
+  height: auto;
+  padding-top: 56.25%;
 }
 
 .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
-  margin-bottom: 0;
+  object-fit: cover;
   border-radius: 3px;
   box-shadow: -10px 0 10px -5px rgba(0, 0, 0, 0.5),
     10px 0 10px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.5);

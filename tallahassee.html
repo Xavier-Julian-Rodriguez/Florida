@@ -7,12 +7,14 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
+    <title>Tallahassee | Florida</title>
+    <meta
+      name="description"
+      content="This website is stricktly for demonstration purposes used for WGU's D277 - Front End Development course."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./styles/Tallahassee.css" />
     <link rel="stylesheet" href="./styles/global.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,14 +22,168 @@
       rel="stylesheet"
     />
   </head>
+  <header>
+    <div class="leftHeader">
+      <h1 class="h1">Florida</h1>
+      <p class="subtext">The Sunshine State</p>
+    </div>
+    <div class="search">
+      <form><input class="input" placeholder="Search" /></form>
+      <button class="button">Go</button>
+    </div>
+  </header>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a class="link" href="./index.html" target="_self">Home</a>
+      </li>
+      <li class="li">
+        <a class="link" href="./orlando.html" target="_self">Orlando</a>
+      </li>
+      <li class="li">
+        <a class="link" href="./tampa.html" target="_self">Tampa</a>
+      </li>
+      <li class="li">
+        <a class="link" href="./tallahassee.html" target="_self">Tallahassee</a>
+      </li>
+    </ul>
+  </nav>
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
+    <section class="hero">
+      <div class="leftFlex">
+        <h2 class="h2">Tallahassee</h2>
+        <h3 class="h3">Tallahassee is the capital city of Florida.</h3>
+        <p>The Muskogean word "Tallahassee" means "old fields" or "old town"</p>
+      </div>
+    </section>
+    <div id="divider"></div>
 
+    <!-- data table starts here -->
+    <section class="tableContainer">
+      <table id="table">
+        <tr class="tr">
+          <th><h3>City</h3></th>
+          <th><h3>Year Incorporated</h3></th>
+          <th><h3>Region</h3></th>
+          <th><h3>City Population</h3></th>
+          <th><h3>Average Income</h3></th>
+          <th><h3>City Classification</h3></th>
+        </tr>
+        <tr class="tr">
+          <td>Orlando</td>
+          <td>1875</td>
+          <td>Central Florida</td>
+          <td>307,573</td>
+          <td>$65,354</td>
+          <td>Urban</td>
+        </tr>
+        <tr class="tr">
+          <td>Tampa</td>
+          <td>1849</td>
+          <td>Central Florida</td>
+          <td>384,959</td>
+          <td>$71,089</td>
+          <td>Urban</td>
+        </tr>
+        <tr class="tr">
+          <td>Tallahassee</td>
+          <td>1825</td>
+          <td>Northern Panhandle Region</td>
+          <td>196,169</td>
+          <td>$53,867</td>
+          <td>Urban</td>
+        </tr>
+      </table>
+    </section>
+    <!-- row two begins here -->
+    <section id="about" class="rowTwo">
+      <div class="imgContainer">
+        <img
+          src="./public/tallahassee.jpg"
+          alt="Tallahassee, Florida Supreme Court building"
+          class="img"
+        />
+        <p class="subtext">
+          image source: Wikipedia (October 05, 2023). Wikipedia.
+          <a
+            href="https://en.wikipedia.org/wiki/Tallahassee,_Florida#/media/File:Florida_Supreme_Court_2022.jpg"
+            target="_blank"
+            >LINK</a
+          >
+        </p>
+      </div>
+      <aside class="aside">
+        <h4 class="h4">Sources</h4>
+        <ol class="ol">
+          <li>
+            B. M. (March 16, 2019). Unsplash.
+            <a
+              class="link"
+              href="https://unsplash.com/photos/brown-brick-pathway-eYA4DHQi8BI"
+              target="_blank"
+              >https://unsplash.com/photos/brown-brick-pathway-eYA4DHQi8BI</a
+            >
+          </li>
+          <li>
+            Wikipedia (October 05, 2023). Wikipedia.
+            <a
+              class="link"
+              href="https://en.wikipedia.org/wiki/Tallahassee,_Florida#/media/File:Florida_Supreme_Court_2022.jpg"
+              target="_blank"
+              >https://unsplash.com/photos/city-skyline-across-body-of-water-during-daytime-Tyn3-Cljx-A</a
+            >
+          </li>
+          <li>
+            United States Census Bureau (n.d.). Tallahassee city, Florida.
+            <a
+              class="link"
+              href="https://data.census.gov/profile/Tallahassee_city,_Florida?g=160XX00US1270600"
+              target="_blank"
+              >https://data.census.gov/profile/Orlando_city,_Florida?g=160XX00US1253000</a
+            >
+          </li>
+        </ol>
+      </aside>
+    </section>
+    <div class="clear"></div>
+    <section class="rowThree">
+      <p>Ray Charles was the first notable famous musician in Tallahassee.</p>
+      <aside class="aside2">
+        <h2>
+          "The large and complex Mississippian culture had built earthwork
+          mounds near Lake Jackson which survive today; they are preserved in
+          the Lake Jackson Archaeological State Park".
+        </h2>
+        <p class="srcCaption">
+          -Wikipedia (n.d.). Tallahassee, Florida.
+          <a
+            href="https://en.wikipedia.org/wiki/Tallahassee,_Florida"
+            target="_blank"
+            >LINK</a
+          >
+        </p>
+      </aside>
+    </section>
+    <div class="clear"></div>
+
+    <footer class="footer">
+      <ul class="ul">
+        <li class="li">
+          <a class="link" href="./index.html" target="_self">Home</a>
+        </li>
+        <li class="li">
+          <a class="link" href="./orlando.html" target="_self">Orlando</a>
+        </li>
+        <li class="li">
+          <a class="link" href="./tampa.html" target="_self">Tampa</a>
+        </li>
+        <li class="li">
+          <a class="link" href="./tallahassee.html" target="_self"
+            >Tallahassee</a
+          >
+        </li>
+      </ul>
+    </footer>
     <script src="" async defer></script>
   </body>
 </html>
