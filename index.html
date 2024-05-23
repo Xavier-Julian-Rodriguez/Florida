@@ -10,7 +10,7 @@
     <title>Florida - The Sunshine State</title>
     <meta
       name="description"
-      content="This website is stricktly for demonstration purposes used for WGU's D277 - Front End Development course."
+      content="This website is strictly for demonstration purposes used for WGU's D277 - Front End Development course."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./styles/index.css" />
@@ -207,10 +207,10 @@
             ></textarea>
           </div>
           <div class="group">
+            <div id="error" class="error">
+              <p>*Your email addresses do not match. Please try again.</p>
+            </div>
             <button class="secondBtn" type="submit">Submit</button>
-          </div>
-          <div id="error" class="error">
-            <p>Your email addresses do not match. Please try again.</p>
           </div>
         </form>
       </section>
@@ -247,6 +247,7 @@
         } else {
           console.log("Form Submitted");
           document.getElementById("form").reset();
+          error.style.display = "none";
         }
       });
     </script>

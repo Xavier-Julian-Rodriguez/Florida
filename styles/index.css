@@ -153,6 +153,10 @@ textarea {
   width: 100%;
 }
 
+#error {
+  color: #a80533;
+}
+
 @media screen and (max-width: 720px) {
   .hero {
     flex-direction: column !important;
