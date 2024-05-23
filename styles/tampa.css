@@ -11,11 +11,14 @@ body::before {
   background-image: url("../public/tampa.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.5;
+  opacity: 0.33;
   z-index: -1;
 }
 .hero {
-  min-height: 75vh;
+  padding: 10% 5% 10% 10% !important;
+}
+.leftFlex {
+  text-align: left !important;
 }
 .rowTwo {
   width: 100%;
@@ -72,4 +75,18 @@ body::before {
 }
 .link {
   color: #ffffff;
+}
+.rowThree > p {
+  padding: 3% 10%;
+}
+.aside2 {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 3% 10%;
+  float: inline-start;
+}
+.rowThree > p {
+    font-size: 2rem;
+    font-weight: 400;
 }
