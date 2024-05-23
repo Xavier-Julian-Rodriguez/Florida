@@ -127,3 +127,63 @@
 a:hover {
   cursor: pointer;
 }
+
+.error {
+  display: none;
+}
+
+.formContainer {
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+#form {
+  width: 50%;
+  padding-left: 10%;
+}
+
+.formContainer > h2 {
+  padding-left: 10%;
+}
+.group,
+label,
+input,
+textarea {
+  width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+  .hero {
+    flex-direction: column !important;
+  }
+  .leftFlex {
+    width: 100% !important;
+    text-align: left !important;
+    padding: 3% 10%;
+  }
+  .imgContainer {
+    width: 100%;
+  }
+  .rowTwo {
+    flex-direction: column;
+    border: none;
+    width: 100%;
+  }
+  .row2Text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    min-height: unset;
+  }
+  .aside {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .rowThree {
+    flex-direction: column;
+    row-gap: 12px;
+  }
+  .card {
+    width: 100%;
+  }
+}

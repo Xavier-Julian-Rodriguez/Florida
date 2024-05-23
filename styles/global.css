@@ -1,6 +1,7 @@
 html {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -164,4 +165,25 @@ th {
 }
 th {
   color: #a80533;
+}
+@media screen and (max-width: 720px) {
+  header {
+    flex-direction: column;
+  }
+  .leftHeader {
+    width: 100%;
+    padding-right: unset;
+    text-align: center;
+  }
+  .subtext {
+    left: unset;
+  }
+  .search {
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 3%;
+  }
+  nav {
+    text-align: center;
+  }
 }

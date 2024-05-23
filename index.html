@@ -76,7 +76,7 @@
 
       <section id="about" class="rowTwo">
         <p class="paragraph row2Text">
-          14,000 year ago, Paleo-Indians entered Florida. The earliest
+          14,000 years ago, Paleo-Indians entered Florida. The earliest
           historical record for major groups of people residing in Florida was
           in the 16th century. These people included the Timucua in the northern
           central region, the Calusa residing in the southwest region, the Ais
@@ -173,6 +173,47 @@
           >
         </div>
       </section>
+      <section class="formContainer">
+        <h2 class="h2">Ask Us Anything!</h2>
+        <form id="form" action="" method="post">
+          <div class="group">
+            <label for="first">First:</label>
+            <input type="text" id="first" name="first" required />
+          </div>
+          <div class="group">
+            <label for="last">Last:</label>
+            <input type="text" id="last" name="last" required />
+          </div>
+          <div class="group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="group">
+            <label for="confirmation">Email (confirm):</label>
+            <input
+              type="email"
+              id="confirmation"
+              name="confirmation"
+              required
+            />
+          </div>
+          <div class="group">
+            <label for="question">Question:</label>
+            <textarea
+              id="question"
+              name="question"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <div class="group">
+            <button class="secondBtn" type="submit">Submit</button>
+          </div>
+          <div id="error" class="error">
+            <p>Your email addresses do not match. Please try again.</p>
+          </div>
+        </form>
+      </section>
     </main>
     <footer class="footer">
       <ul class="ul">
@@ -192,6 +233,22 @@
         </li>
       </ul>
     </footer>
-    <script src="" async defer></script>
+    <!-- the form script to check email addresses -->
+    <script async>
+      document.getElementById("form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const email = document.getElementById("email").value;
+        const confirm = document.getElementById("confirmation").value;
+        const error = document.getElementById("error");
+
+        if (email !== confirm) {
+          event.preventDefault();
+          error.style.display = "block";
+        } else {
+          console.log("Form Submitted");
+          document.getElementById("form").reset();
+        }
+      });
+    </script>
   </body>
 </html>
