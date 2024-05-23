@@ -94,3 +94,32 @@ body::before {
   font-size: 2rem;
   font-weight: 400;
 }
+@media screen and (max-width: 720px) {
+  #about {
+    flex-direction: column;
+  }
+  .imgContainer {
+    width: 100%;
+    padding: unset;
+  }
+  .aside {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .ol {
+    font-size: 0.75rem;
+  }
+  .aside2 {
+    padding: unset;
+  }
+  .aside2 > h2,
+  .aside2 > p,
+  .subtext {
+    padding: unset;
+    text-align: center;
+  }
+  .aside2 > h2 {
+    font-size: 1rem;
+    padding: 3%;
+  }
+}

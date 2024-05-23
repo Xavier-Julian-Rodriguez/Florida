@@ -183,7 +183,19 @@ th {
     justify-content: center;
     padding-bottom: 3%;
   }
-  nav {
-    text-align: center;
+  .ul {
+    padding-left: unset;
+    justify-content: space-around;
+  }
+  #table {
+    width: 50%;
+    margin-right: unset;
+    margin-right: unset;
+    margin: 0 auto;
+  }
+  tr,
+  td,
+  th {
+    font-size: 0.5rem !important;
   }
 }
